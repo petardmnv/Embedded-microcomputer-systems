@@ -36,17 +36,6 @@ F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarSte
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_Servo Servo
-U 1 1 5FF389CD
-P 4900 1800
-F 0 "Servo" H 5232 1865 50  0000 L CNN
-F 1 "Motor_Servo_moving_Up_Down" H 5232 1774 50  0000 L CNN
-F 2 "" H 4900 1610 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4900 1610 50  0001 C CNN
-	1    4900 1800
-	-1   0    0    1   
-$EndComp
-$Comp
 L Test:EXA4988 Stepper_Motor_1
 U 1 1 5FFF1309
 P 5550 2800
@@ -120,7 +109,7 @@ Wire Wire Line
 	6300 2450 5950 2450
 Wire Wire Line
 	6400 2550 5950 2550
-Text Notes 7000 6650 0    50   ~ 0
+Text Notes 9700 5250 0    50   ~ 0
 Project by Peter Damianov
 $Comp
 L Device:Battery BT?
@@ -184,17 +173,11 @@ Wire Wire Line
 Wire Wire Line
 	4050 1400 5350 1400
 Wire Wire Line
-	5350 1400 5350 1800
-Wire Wire Line
-	5350 1800 5200 1800
-Wire Wire Line
 	3350 3200 3200 3200
 Wire Wire Line
 	3200 3200 3200 2050
 Wire Wire Line
 	3200 2050 5200 2050
-Wire Wire Line
-	5200 2050 5200 1900
 Wire Wire Line
 	5200 1700 5200 1500
 Wire Wire Line
@@ -310,5 +293,22 @@ F 2 "" H 5950 3150 50  0001 C CNN
 F 3 "" H 5950 3150 50  0001 C CNN
 	1    5950 3150
 	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2050 5200 1900
+Wire Wire Line
+	5350 1800 5200 1800
+Wire Wire Line
+	5350 1400 5350 1800
+$Comp
+L Motor:Motor_Servo Servo
+U 1 1 5FF389CD
+P 4900 1800
+F 0 "Servo" H 5232 1865 50  0000 L CNN
+F 1 "Motor_Servo_moving_Up_Down" H 5232 1774 50  0000 L CNN
+F 2 "" H 4900 1610 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4900 1610 50  0001 C CNN
+	1    4900 1800
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
